@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Receita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <h1>Nova receita</h1>
+    <a href="index.html" class="btn-back">← Voltar</a>
+</header>
+
+<main class="page-wrapper">
+    <section class="form-container form-card">
+        <h2 class="form-title">Cadastrar nova receita</h2>
+
+        <form id="form-nova">
+            <div class="form-field">
+                <label for="title">Título da receita</label>
+                <input id="title" required>
+            </div>
+
+            <div class="form-field">
+                <label for="category">Categoria</label>
+                <select id="category" required>
+                    <option value="">Selecione uma categoria</option>
+                    <option value="Doce">Doce</option>
+                    <option value="Salgado">Salgado</option>
+                    <option value="Bebida">Bebida</option>
+                    <option value="Lanche">Lanche</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-two-columns">
+                <div class="form-field">
+                    <label for="cookTime">Tempo de preparo (min)</label>
+                    <input id="cookTime" type="number" min="0">
+                </div>
+
+                <div class="form-field">
+                    <label for="difficulty">Dificuldade</label>
+                    <input id="difficulty" placeholder="Fácil, Média, Difícil">
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="rating">Nota (0–5)</label>
+                <input id="rating" type="number" min="0" max="5" step="0.5">
+            </div>
+
+            <div class="form-field">
+                <label for="instructions">Modo de preparo</label>
+                <textarea id="instructions" required></textarea>
+            </div>
+
+            <div class="actions-row actions-center">
+                <button type="submit" class="btn-primary">Salvar receita</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<script src="nova.js"></script>
+</body>
+</html>

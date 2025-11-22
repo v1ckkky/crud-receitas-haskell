@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca de Receitas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP BAR estilo TudoGostoso -->
+<header class="tg-topbar">
+    <div class="tg-logo">MINHAS RECEITAS</div>
+
+    <div class="tg-search">
+        <input id="search-bar" type="text" placeholder="Encontre uma receita..." />
+        <button id="search-btn">🔍</button>
+    </div>
+
+    <nav class="tg-actions">
+        <a href="nova.html" class="tg-action-link">Enviar sua receita</a>
+        <!-- "Meu caderno" removido -->
+    </nav>
+</header>
+
+<!-- BARRA DE CATEGORIAS (agora funcional) -->
+<nav class="tg-categories">
+    <a href="#" class="tg-cat" data-category="">Todas as receitas</a>
+    <a href="#" class="tg-cat" data-category="Doce">Doces</a>
+    <a href="#" class="tg-cat" data-category="Salgado">Salgados</a>
+    <a href="#" class="tg-cat" data-category="Bebida">Bebidas</a>
+    <a href="#" class="tg-cat" data-category="Lanche">Lanches</a>
+    <a href="#" class="tg-cat" data-category="Outro">Outros</a>
+</nav>
+
+
+<section class="cards-container">
+    <ul id="recipes-list" class="cards-grid">
+        <!-- Os cartões são renderizados via JS -->
+    </ul>
+</section>
+
+<script src="index.js"></script>
+</body>
+</html>
